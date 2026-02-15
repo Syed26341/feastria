@@ -31,19 +31,22 @@
         <div>
             <h4 class="font-bold mb-6 text-white">Quick Links</h4>
             <ul class="space-y-4 text-white/70">
-                <li><a class="hover:text-primary transition-colors" href="#">Our Menu</a></li>
-                <li><a class="hover:text-primary transition-colors" href="#">Make a Reservation</a></li>
-                <li><a class="hover:text-primary transition-colors" href="#">Private Events</a></li>
-                <li><a class="hover:text-primary transition-colors" href="#">Gift Cards</a></li>
+                <li><a class="hover:text-primary transition-colors" href="{{ route('menu') }}">Our Menu</a></li>
+                <li><a class="hover:text-primary transition-colors" href="{{ route('reservations') }}">Make a
+                        Reservation</a></li>
+                <li><a class="hover:text-primary transition-colors" href="{{ route('private-events') }}">Private
+                        Events</a>
+                </li>
+                <li><a class="hover:text-primary transition-colors" href="{{ route('gift-cards') }}">Gift Cards</a></li>
             </ul>
         </div>
         <div>
             <h4 class="font-bold mb-6 text-white">Company</h4>
             <ul class="space-y-4 text-white/70">
                 <li><a class="hover:text-primary transition-colors" href="{{ route('about') }}">About Us</a></li>
-                <li><a class="hover:text-primary transition-colors" href="#">Our Chefs</a></li>
-                <li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
-                <li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+                <li><a class="hover:text-primary transition-colors" href="{{ route('chefs') }}">Our Chefs</a></li>
+                <li><a class="hover:text-primary transition-colors" href="{{ route('blogs') }}">Blog</a></li>
+                <li><a class="hover:text-primary transition-colors" href="{{ route('careers') }}">Careers</a></li>
             </ul>
         </div>
         <div>

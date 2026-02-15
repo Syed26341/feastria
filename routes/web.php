@@ -40,6 +40,22 @@ Route::get('/blogs', function () {
     return view('front.blogs');
 })->name('blogs');
 
+Route::get('/private-events', function () {
+    return view('front.private-events');
+})->name('private-events');
+
+Route::get('/gift-cards', function () {
+    return view('front.gift-cards');
+})->name('gift-cards');
+
+Route::get('/chefs', function () {
+    return view('front.chefs');
+})->name('chefs');
+
+Route::get('/careers', function () {
+    return view('front.careers');
+})->name('careers');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
