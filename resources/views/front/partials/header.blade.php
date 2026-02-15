@@ -16,9 +16,9 @@
         </div>
         <nav class="hidden lg:flex items-center gap-6">
             <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
-                href="#">Home</a>
+                href="{{ route('home') }}">Home</a>
             <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
-                href="#">About</a>
+                href="{{ route('about') }}">About</a>
             <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
                 href="#">Menu</a>
             <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"

@@ -1,4 +1,4 @@
-<footer class="bg-white dark:bg-background-dark border-t border-primary/10 pt-20 pb-10">
+<footer class="bg-[#181311] text-white pt-20 pb-10 border-t border-white/10">
     <div class="max-w-7xl mx-auto px-4 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         <div class="space-y-6">
             <div class="flex items-center gap-2 text-primary">
@@ -9,9 +9,9 @@
                             fill="currentColor"></path>
                     </svg>
                 </div>
-                <h2 class="text-xl font-bold text-[#181311] dark:text-white">FEASTRIA</h2>
+                <h2 class="text-xl font-bold text-white">FEASTRIA</h2>
             </div>
-            <p class="text-[#181311]/60 dark:text-gray-400">Elevating the art of dining through passion, sustainability,
+            <p class="text-white/70">Elevating the art of dining through passion, sustainability,
                 and unmatched culinary craft since 2012.</p>
             <div class="flex gap-4">
                 <a class="size-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
@@ -29,8 +29,8 @@
             </div>
         </div>
         <div>
-            <h4 class="font-bold mb-6">Quick Links</h4>
-            <ul class="space-y-4 text-[#181311]/70 dark:text-gray-400">
+            <h4 class="font-bold mb-6 text-white">Quick Links</h4>
+            <ul class="space-y-4 text-white/70">
                 <li><a class="hover:text-primary transition-colors" href="#">Our Menu</a></li>
                 <li><a class="hover:text-primary transition-colors" href="#">Make a Reservation</a></li>
                 <li><a class="hover:text-primary transition-colors" href="#">Private Events</a></li>
@@ -38,17 +38,17 @@
             </ul>
         </div>
         <div>
-            <h4 class="font-bold mb-6">Company</h4>
-            <ul class="space-y-4 text-[#181311]/70 dark:text-gray-400">
-                <li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+            <h4 class="font-bold mb-6 text-white">Company</h4>
+            <ul class="space-y-4 text-white/70">
+                <li><a class="hover:text-primary transition-colors" href="{{ route('about') }}">About Us</a></li>
                 <li><a class="hover:text-primary transition-colors" href="#">Our Chefs</a></li>
                 <li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
                 <li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
             </ul>
         </div>
         <div>
-            <h4 class="font-bold mb-6">Visit Us</h4>
-            <ul class="space-y-4 text-[#181311]/70 dark:text-gray-400">
+            <h4 class="font-bold mb-6 text-white">Visit Us</h4>
+            <ul class="space-y-4 text-white/70">
                 <li class="flex items-start gap-3">
                     <span class="material-symbols-outlined text-primary">location_on</span>
                     <span>123 Culinary Ave, Gastronomy District<br />New York, NY 10001</span>
@@ -64,8 +64,7 @@
             </ul>
         </div>
     </div>
-    <div
-        class="max-w-7xl mx-auto px-4 md:px-10 border-t border-primary/5 pt-10 text-center text-sm text-[#181311]/40 dark:text-gray-500">
+    <div class="max-w-7xl mx-auto px-4 md:px-10 border-t border-white/10 pt-10 text-center text-sm text-white/40">
         <p>© 2024 FEASTRIA Fine Dining Group. All rights reserved. | <a class="hover:underline" href="#">Privacy
                 Policy</a> | <a class="hover:underline" href="#">Terms of Service</a></p>
     </div>

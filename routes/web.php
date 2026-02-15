@@ -6,7 +6,11 @@ use Inertia\Inertia;
 
 Route::get('/', function () {
     return view('front.index');
-});
+})->name('home');
+
+Route::get('/about', function () {
+    return view('front.about');
+})->name('about');
 
 Route::middleware([
     'auth:sanctum',
