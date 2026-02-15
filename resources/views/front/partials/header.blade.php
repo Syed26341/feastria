@@ -28,7 +28,7 @@
             <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
                 href="#">Gallery</a>
             <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
-                href="#">Blog</a>
+                href="{{ route('gallery') }}">Gallery</a>
             <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
                 href="{{ route('contact') }}">Contact</a>
         </nav>
