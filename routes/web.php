@@ -20,13 +20,25 @@ Route::get('/experiences', function () {
     return view('front.experiences');
 })->name('experiences');
 
-Route::get('/gallery', function () {
-    return view('front.gallery');
-})->name('gallery');
+Route::get('/menu', function () {
+    return view('front.menu');
+})->name('menu');
+
+Route::get('/reservations', function () {
+    return view('front.reservations');
+})->name('reservations');
 
 Route::get('/faq', function () {
     return view('front.faq');
 })->name('faq');
+
+Route::get('/gallery', function () {
+    return view('front.gallery');
+})->name('gallery');
+
+Route::get('/blogs', function () {
+    return view('front.blogs');
+})->name('blogs');
 
 Route::middleware([
     'auth:sanctum',

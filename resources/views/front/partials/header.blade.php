@@ -20,13 +20,11 @@
             <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
                 href="{{ route('about') }}">About</a>
             <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
-                href="#">Menu</a>
+                href="{{ route('menu') }}">Menu</a>
             <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
-                href="#">Experiences</a>
+                href="{{ route('experiences') }}">Experiences</a>
             <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
-                href="#">Reservations</a>
-            <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
-                href="#">Gallery</a>
+                href="{{ route('reservations') }}">Reservations</a>
             <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
                 href="{{ route('gallery') }}">Gallery</a>
             <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
