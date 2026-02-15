@@ -17,16 +17,17 @@
                 Bespoke culinary moments curated for the refined palate. From the comfort of your home to the heat of the
                 kitchen.
             </p>
-            <button
+            <a href="#offerings"
                 class="flex mx-auto min-w-[180px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-8 bg-primary text-white text-sm font-black uppercase tracking-widest hover:bg-primary/90 hover:scale-105 transition-all">
                 Explore All
-            </button>
+            </a>
         </div>
     </section>
 
     <!-- Experiences Grid Section -->
     <section class="max-w-[1200px] mx-auto px-6 py-20">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+        <div id="offerings"
+            class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4 border-t border-transparent pt-10">
             <div class="max-w-xl">
                 <h2 class="text-3xl md:text-4xl font-black text-[#181311] dark:text-white leading-tight">Our Curated
                     Offerings</h2>
@@ -55,7 +56,7 @@
                     corporate milestones.
                 </p>
                 <a class="mt-auto flex items-center gap-2 text-primary font-black uppercase tracking-widest text-sm hover:underline underline-offset-8"
-                    href="#">
+                    href="{{ route('private-events') }}">
                     Learn More <span class="material-symbols-outlined text-lg">chevron_right</span>
                 </a>
             </div>

@@ -125,10 +125,10 @@
             <h2 class="text-4xl font-black text-[#181311] dark:text-white mb-6">Experience it yourself</h2>
             <p class="text-lg text-[#8a6b60] dark:text-white/70 mb-10">Join us for an unforgettable dining experience where
                 every dish is a masterpiece and every visit a memory.</p>
-            <button
-                class="bg-primary text-white text-lg font-bold px-10 py-4 rounded-xl hover:scale-105 transition-transform shadow-xl shadow-primary/20">
+            <a href="{{ route('reservations') }}"
+                class="inline-block bg-primary text-white text-lg font-bold px-10 py-4 rounded-xl hover:scale-105 transition-transform shadow-xl shadow-primary/20">
                 Make a Reservation
-            </button>
+            </a>
         </div>
     </section>
 @endsection

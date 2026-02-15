@@ -16,14 +16,14 @@
                 your senses.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <button
-                    class="w-full sm:w-auto min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-lg font-bold hover:scale-105 transition-transform">
+                <a href="{{ route('menu') }}"
+                    class="w-full sm:w-auto min-w-[180px] cursor-pointer flex items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-lg font-bold hover:scale-105 transition-transform">
                     View Menu
-                </button>
-                <button
-                    class="w-full sm:w-auto min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-white/10 backdrop-blur-md border border-white/30 text-white text-lg font-bold hover:bg-white/20 transition-all">
+                </a>
+                <a href="{{ route('reservations') }}"
+                    class="w-full sm:w-auto min-w-[180px] cursor-pointer flex items-center justify-center rounded-lg h-14 px-8 bg-white/10 backdrop-blur-md border border-white/30 text-white text-lg font-bold hover:bg-white/20 transition-all">
                     Reserve Now
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -45,11 +45,11 @@
                     that connects people to the land and the season.
                 </p>
                 <div class="pt-4">
-                    <button class="text-primary font-bold flex items-center gap-2 group">
+                    <a href="{{ route('about') }}" class="text-primary font-bold flex items-center gap-2 group">
                         Learn more about our heritage
                         <span
                             class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="relative group">
@@ -130,9 +130,9 @@
                 <div class="absolute bottom-0 p-8">
                     <h3 class="text-white text-2xl font-bold mb-2">Private Dining</h3>
                     <p class="text-white/80 text-sm mb-4">Bespoke celebrations in our exclusive heritage room.</p>
-                    <button
+                    <a href="{{ route('private-events') }}"
                         class="bg-white text-[#181311] px-4 py-2 rounded font-bold text-sm hover:bg-primary hover:text-white transition-colors">Book
-                        Space</button>
+                        Space</a>
                 </div>
             </div>
             <div class="relative h-[400px] rounded-xl overflow-hidden group">
@@ -144,9 +144,9 @@
                 <div class="absolute bottom-0 p-8">
                     <h3 class="text-white text-2xl font-bold mb-2">Wine Tasting</h3>
                     <p class="text-white/80 text-sm mb-4">Curated selection from our sommelier's private cellar.</p>
-                    <button
+                    <a href="{{ route('reservations') }}"
                         class="bg-white text-[#181311] px-4 py-2 rounded font-bold text-sm hover:bg-primary hover:text-white transition-colors">View
-                        Dates</button>
+                        Dates</a>
                 </div>
             </div>
             <div class="relative h-[400px] rounded-xl overflow-hidden group">
@@ -158,9 +158,9 @@
                 <div class="absolute bottom-0 p-8">
                     <h3 class="text-white text-2xl font-bold mb-2">Chef's Table</h3>
                     <p class="text-white/80 text-sm mb-4">Go behind the scenes for an 8-course culinary odyssey.</p>
-                    <button
+                    <a href="{{ route('experiences') }}"
                         class="bg-white text-[#181311] px-4 py-2 rounded font-bold text-sm hover:bg-primary hover:text-white transition-colors">Inquire
-                        Now</button>
+                        Now</a>
                 </div>
             </div>
         </div>

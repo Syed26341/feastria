@@ -47,13 +47,6 @@
                         simple joy of sharing a table with those we love.
                     </p>
                 </div>
-                <div class="pt-4">
-                    <button class="flex items-center gap-2 text-primary font-bold text-lg group">
-                        <span>Learn more about our heritage</span>
-                        <span
-                            class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
-                    </button>
-                </div>
             </div>
             <div class="relative group order-1 lg:order-2">
                 <div

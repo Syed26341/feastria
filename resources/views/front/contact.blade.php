@@ -19,14 +19,14 @@
                 help.
             </p>
             <div class="flex items-center justify-center gap-4">
-                <button
-                    class="min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold transition-transform hover:scale-105 hidden md:flex">
+                <a href="{{ route('faq') }}"
+                    class="min-w-[140px] cursor-pointer flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold transition-transform hover:scale-105 hidden md:flex">
                     View FAQ
-                </button>
-                <button
-                    class="min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-base font-bold hover:bg-white/20 transition-all hidden md:flex">
+                </a>
+                <a href="#map"
+                    class="min-w-[140px] cursor-pointer flex items-center justify-center rounded-lg h-12 px-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-base font-bold hover:bg-white/20 transition-all hidden md:flex">
                     Location
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -109,7 +109,7 @@
                 </div>
 
                 <!-- Map Block -->
-                <div
+                <div id="map"
                     class="flex-1 min-h-[300px] rounded-2xl overflow-hidden relative border border-primary/10 shadow-lg group">
                     <div class="absolute inset-0 bg-cover bg-center filter grayscale contrast-125 opacity-40 dark:opacity-20 group-hover:filter-none group-hover:opacity-60 transition-all duration-700"
                         data-alt="Abstract map pattern showing street blocks" data-location="New York City"

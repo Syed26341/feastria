@@ -71,10 +71,10 @@
                     </div>
                     <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 flex-grow">Creamy burrata with heirloom
                         tomatoes, balsamic glaze, and fresh basil pesto.</p>
-                    <button
-                        class="w-full py-2.5 bg-primary/10 text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all duration-200">
-                        Add to Order
-                    </button>
+                    <a href="{{ route('reservations') }}"
+                        class="block w-full text-center py-2.5 bg-primary/10 text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all duration-200">
+                        Reserve Table
+                    </a>
                 </div>
             </div>
             <!-- Menu Item 2 -->
@@ -195,10 +195,10 @@
                     </p>
                     <div class="flex items-center gap-6 pt-4">
                         <span class="text-3xl font-black text-primary">$42</span>
-                        <button
+                        <a href="{{ route('reservations') }}"
                             class="px-8 py-4 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/30 hover:shadow-xl hover:-translate-y-1 transition-all">
                             Order Special
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

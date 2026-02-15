@@ -18,10 +18,10 @@
                 From intimate anniversary dinners to grand corporate galas, create unforgettable memories in our exclusive
                 spaces.
             </p>
-            <button
-                class="mx-auto min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-sm font-black uppercase tracking-widest hover:bg-primary/90 hover:scale-105 transition-all">
+            <a href="#inquiry"
+                class="flex mx-auto min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-primary text-white text-sm font-black uppercase tracking-widest hover:bg-primary/90 hover:scale-105 transition-all">
                 Inquire Now
-            </button>
+            </a>
         </div>
     </section>
 
@@ -93,7 +93,7 @@
     </section>
 
     <!-- Inquiry Form -->
-    <section class="bg-[#181311] dark:bg-black/40 py-20 px-4 text-white">
+    <section id="inquiry" class="bg-[#181311] dark:bg-black/40 py-20 px-4 text-white">
         <div class="max-w-3xl mx-auto text-center mb-12">
             <span class="text-primary font-bold uppercase tracking-widest text-sm mb-2 block">Start Planning</span>
             <h2 class="text-4xl font-black mb-4">Event Inquiry</h2>
