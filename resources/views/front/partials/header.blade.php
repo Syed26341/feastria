@@ -30,7 +30,7 @@
             <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
                 href="#">Blog</a>
             <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
-                href="#">Contact</a>
+                href="{{ route('contact') }}">Contact</a>
         </nav>
         <button
             class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
