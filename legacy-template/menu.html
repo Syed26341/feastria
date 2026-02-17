@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Menu | FEASTRIA</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f15a22",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221510",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(8px);
+        }
+    </style>
+
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#181311] dark:text-white transition-colors duration-300">
+    <header
+    class="sticky-nav bg-white/90 dark:bg-background-dark/90 border-b border-solid border-primary/10 px-4 md:px-10 py-3">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-2 text-primary">
+            <div class="size-8">
+                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z"
+                        fill="currentColor"></path>
+                    <path clip-rule="evenodd"
+                        d="M39.998 35.764C39.9944 35.7463 39.9875 35.7155 39.9748 35.6706C39.9436 35.5601 39.8949 35.4259 39.8346 35.2825C39.8168 35.2403 39.7989 35.1993 39.7813 35.1602C38.5103 34.2887 35.9788 33.0607 33.7095 32.5189C30.9875 31.8691 27.6413 31.4783 24 31.4783C20.3587 31.4783 17.0125 31.8691 14.2905 32.5189C12.0012 33.0654 9.44505 34.3104 8.18538 35.1832C8.17384 35.2075 8.16216 35.233 8.15052 35.2592C8.09919 35.3751 8.05721 35.4886 8.02977 35.589C8.00356 35.6848 8.00039 35.7333 8.00004 35.7388C8.00004 35.739 8 35.7393 8.00004 35.7388C8.00004 35.7641 8.0104 36.0767 8.68485 36.6314C9.34546 37.1746 10.4222 37.7531 11.9291 38.2772C14.9242 39.319 19.1919 40 24 40C28.8081 40 33.0758 39.319 36.0709 38.2772C37.5778 37.7531 38.6545 37.1746 39.3151 36.6314C39.9006 36.1499 39.9857 35.8511 39.998 35.764ZM4.95178 32.7688L21.4543 6.30267C22.6288 4.4191 25.3712 4.41909 26.5457 6.30267L43.0534 32.777C43.0709 32.8052 43.0878 32.8338 43.104 32.8629L41.3563 33.8352C43.104 32.8629 43.1038 32.8626 43.104 32.8629L43.1051 32.865L43.1065 32.8675L43.1101 32.8739L43.1199 32.8918C43.1276 32.906 43.1377 32.9246 43.1497 32.9473C43.1738 32.9925 43.2062 33.0545 43.244 33.1299C43.319 33.2792 43.4196 33.489 43.5217 33.7317C43.6901 34.1321 44 34.9311 44 35.7391C44 37.4427 43.003 38.7775 41.8558 39.7209C40.6947 40.6757 39.1354 41.4464 37.385 42.0552C33.8654 43.2794 29.133 44 24 44C18.867 44 14.1346 43.2794 10.615 42.0552C8.86463 41.4464 7.30529 40.6757 6.14419 39.7209C4.99695 38.7775 3.99999 37.4427 3.99999 35.7391C3.99999 34.8725 4.29264 34.0922 4.49321 33.6393C4.60375 33.3898 4.71348 33.1804 4.79687 33.0311C4.83898 32.9556 4.87547 32.8935 4.9035 32.8471C4.91754 32.8238 4.92954 32.8043 4.93916 32.7889L4.94662 32.777L4.95178 32.7688ZM35.9868 29.004L24 9.77997L12.0131 29.004C12.4661 28.8609 12.9179 28.7342 13.3617 28.6282C16.4281 27.8961 20.0901 27.4783 24 27.4783C27.9099 27.4783 31.5719 27.8961 34.6383 28.6282C35.082 28.7342 35.5339 28.8609 35.9868 29.004Z"
+                        fill="currentColor" fill-rule="evenodd"></path>
+                </svg>
+            </div>
+            <h2 class="text-[#181311] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">FEASTRIA</h2>
+        </div>
+        <nav class="hidden lg:flex items-center gap-6">
+            <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                href="index.html">Home</a>
+            <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                href="about.html">About</a>
+            <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                href="menu.html">Menu</a>
+            <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                href="experiences.html">Experiences</a>
+            <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                href="reservations.html">Reservations</a>
+            <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                href="gallery.html">Gallery</a>
+            <a class="text-[#181311] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors"
+                href="contact.html">Contact</a>
+        </nav>
+        <a href="reservations.html"
+            class="hidden lg:flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+            <span class="truncate">Book a Table</span>
+        </a>
+    </div>
+</header>
+
+
+    <main>
+        
+    <!-- Hero Section -->
+    <section class="relative w-full h-[60vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105"
+            data-alt="Gourmet food spread on a dark rustic table"
+            style='background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAXX9Ezo6O1HHIkOHAsBMRAdQL5GXxoq_z7t96A5jOMa2w7kZWdQaexjjgxbPEHyuXL8bwkSboEWxfwM7JcCBka56h1mRTn-CJla3x3ysqbS6BM0juFBqCiG9HY37hS_6kCk4f7NVGqcMBCsa5llbauOvR53RvIg7NR2-yvJbn2tsrYjYHNtscY-tXxsxUP0fGDiGQf7_-erwd5wVIVmJ4yYPJnLzfNZkhDiWPOvtain3LXPRyAl1Y_yAKrx950FeGBt_wPq7gK66yd");'>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-white text-5xl md:text-7xl font-black leading-tight tracking-[-0.033em] mb-6">
+                Our Menu
+            </h1>
+            <p class="text-white/90 text-lg md:text-xl font-normal leading-relaxed mb-8 max-w-2xl mx-auto">
+                A symphony of seasonal flavors curated by our master chefs.
+            </p>
+        </div>
+    </section>
+
+    <!-- Category Tabs -->
+    <div
+        class="sticky top-[73px] z-40 bg-white/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-primary/10 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 md:px-10 overflow-x-auto">
+            <div class="flex items-center justify-center gap-8 md:gap-12 whitespace-nowrap">
+                <a class="flex items-center gap-2 py-5 text-sm font-bold border-b-2 border-primary text-[#181311] dark:text-white transition-all"
+                    href="#starters">
+                    <span class="material-symbols-outlined text-xl">tapas</span> Starters
+                </a>
+                <a class="flex items-center gap-2 py-5 text-sm font-bold text-gray-500 hover:text-primary transition-all"
+                    href="#mains">
+                    <span class="material-symbols-outlined text-xl">dinner_dining</span> Mains
+                </a>
+                <a class="flex items-center gap-2 py-5 text-sm font-bold text-gray-500 hover:text-primary transition-all"
+                    href="#desserts">
+                    <span class="material-symbols-outlined text-xl">icecream</span> Desserts
+                </a>
+                <a class="flex items-center gap-2 py-5 text-sm font-bold text-gray-500 hover:text-primary transition-all"
+                    href="#drinks">
+                    <span class="material-symbols-outlined text-xl">local_bar</span> Drinks
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Grid -->
+    <section class="max-w-7xl mx-auto px-4 md:px-10 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Menu Item 1 -->
+            <div
+                class="group flex flex-col bg-white dark:bg-white/5 rounded-xl shadow-sm border border-primary/5 overflow-hidden hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
+                <div class="relative aspect-[4/3] overflow-hidden">
+                    <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500"
+                        data-alt="Fresh vibrant Mediterranean salad with feta"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDMYT-LrokRvnnUlCMp8hgQKbYEiBuELYOgCEgGF6AE_GGKI_ChnCYT5neo2xFT_YOoNPD_Aru_e1uHsqSrz-R2xTWBGZ_ImbIiXSADZCVgV84yVAifedA11AjP19745FCRN_iOrnSUXwu1-E-8WrV0E5b3ZOnxBjeQ-pNQwU-pF460vSUNYlVdCt0tw4TBN_55w2e9kZULE1alLzds6KnzylROkF2bDB3cbymGjMNh5Qy_V9arHdFE4b7bgwYhGPqDyP6m_pKOTeaR");'>
+                    </div>
+                    <div class="absolute top-3 right-3">
+                        <button
+                            class="size-9 flex items-center justify-center rounded-full bg-white/90 text-gray-400 hover:text-primary shadow-md transition-colors">
+                            <span class="material-symbols-outlined text-xl">favorite</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-5 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3
+                            class="text-lg font-bold text-[#181311] dark:text-white group-hover:text-primary transition-colors leading-tight">
+                            Garden Burrata</h3>
+                        <span class="text-primary font-bold text-lg">$18</span>
+                    </div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 flex-grow">Creamy burrata with heirloom
+                        tomatoes, balsamic glaze, and fresh basil pesto.</p>
+                    <a href="reservations.html"
+                        class="block w-full text-center py-2.5 bg-primary/10 text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all duration-200">
+                        Reserve Table
+                    </a>
+                </div>
+            </div>
+            <!-- Menu Item 2 -->
+            <div
+                class="group flex flex-col bg-white dark:bg-white/5 rounded-xl shadow-sm border border-primary/5 overflow-hidden hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
+                <div class="relative aspect-[4/3] overflow-hidden">
+                    <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500"
+                        data-alt="Creamy truffle tagliatelle with parmesan"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBnxBytezpOXn9Ccz2jT6FojhcHeUJrXOLPC-4LtvhCenl7nZUYgjG7Dh3e8v0qE0dLjuolqDcWOsaqTXgxZWUTtUIBOJKt6vYM0xVJiGCYH6DrPcfDOtlE4tqkpRW_XjBkvuyp-S10jdLNFmtniVXmwFxyoMhpg4BSZOOcD2ucZejqQHpmRzNBoXEbm8D15Ks_7hCkEnriAyzpxqlslL61_Lqr8nlNIwUXh8_t2xCrplGzJr2N23p5aU12oBaLtWF8qjT2VqbMiuLT");'>
+                    </div>
+                    <div class="absolute top-3 right-3">
+                        <button
+                            class="size-9 flex items-center justify-center rounded-full bg-white/90 text-gray-400 hover:text-primary shadow-md transition-colors">
+                            <span class="material-symbols-outlined text-xl">favorite</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-5 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3
+                            class="text-lg font-bold text-[#181311] dark:text-white group-hover:text-primary transition-colors leading-tight">
+                            Truffle Tagliatelle</h3>
+                        <span class="text-primary font-bold text-lg">$24</span>
+                    </div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 flex-grow">Handmade ribbon pasta tossed in a
+                        luxurious black truffle cream sauce.</p>
+                    <button
+                        class="w-full py-2.5 bg-primary/10 text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all duration-200">
+                        Add to Order
+                    </button>
+                </div>
+            </div>
+            <!-- Menu Item 3 -->
+            <div
+                class="group flex flex-col bg-white dark:bg-white/5 rounded-xl shadow-sm border border-primary/5 overflow-hidden hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
+                <div class="relative aspect-[4/3] overflow-hidden">
+                    <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500"
+                        data-alt="Sizzling wagyu ribeye steak with herbs"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8LGbOrpfrDelgI51AYtQTA2pz0Lvi-RSvJb7Fuod8kUjiF1wg9wObeC3q59b2LeaBWzIfbp9rwrpP6PcVQOHX6cOcOMjXj6bIENlEj2fLOfafs5zPG9X7-QvLXIicQiJFChGvmgzxDI_Q9dy66T30o8-5iesq95rCWA6EoQg0KJyPfupPKpbxnZl7926QEVIKXMb7FvQlDpNcp72X1KI7lAnOACcUo1ONMpY4oyoMUVdFibzr5mSv_wggC6hW5jEEs4k0jUUuBzFz");'>
+                    </div>
+                    <div class="absolute top-3 right-3">
+                        <button
+                            class="size-9 flex items-center justify-center rounded-full bg-white/90 text-gray-400 hover:text-primary shadow-md transition-colors">
+                            <span class="material-symbols-outlined text-xl">favorite</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-5 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3
+                            class="text-lg font-bold text-[#181311] dark:text-white group-hover:text-primary transition-colors leading-tight">
+                            Wagyu Ribeye</h3>
+                        <span class="text-primary font-bold text-lg">$55</span>
+                    </div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 flex-grow">Premium A5 Wagyu cut served with
+                        roasted garlic butter and marrow.</p>
+                    <button
+                        class="w-full py-2.5 bg-primary/10 text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all duration-200">
+                        Add to Order
+                    </button>
+                </div>
+            </div>
+            <!-- Menu Item 4 -->
+            <div
+                class="group flex flex-col bg-white dark:bg-white/5 rounded-xl shadow-sm border border-primary/5 overflow-hidden hover:shadow-xl hover:shadow-primary/5 transition-all duration-300">
+                <div class="relative aspect-[4/3] overflow-hidden">
+                    <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500"
+                        data-alt="Herb crusted salmon with greens"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDPBcChS86DQMjW560QeSFncMzSkjX2uJTa2qi9jpTc0ZqvsRajXYabZGrHz1B2HREDL8R6uJvnnfg3f9DJZnQgHgo-DYAJRdov3gZyYdG0abgbWLANrC6gy01FU-JbnR2quMCvLjjOaVQFRWL0J1CCGyJyQ2Dt60LL7aVaLylKlox5iErdqCrhou_CKlCcYi69Ak4_w5QSQIFkZHmz7mKBMZxRipZU-7a_YZgTbhsa_pVLjTaOUzxIRploBwVGzmUMxwS_llDec2yf");'>
+                    </div>
+                    <div class="absolute top-3 right-3">
+                        <button
+                            class="size-9 flex items-center justify-center rounded-full bg-white/90 text-gray-400 hover:text-primary shadow-md transition-colors">
+                            <span class="material-symbols-outlined text-xl">favorite</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-5 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3
+                            class="text-lg font-bold text-[#181311] dark:text-white group-hover:text-primary transition-colors leading-tight">
+                            Herb Crusted Salmon</h3>
+                        <span class="text-primary font-bold text-lg">$32</span>
+                    </div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 flex-grow">Fresh Atlantic salmon with a
+                        citrus herb crust and seasonal greens.</p>
+                    <button
+                        class="w-full py-2.5 bg-primary/10 text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all duration-200">
+                        Add to Order
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special of the Day Section -->
+    <section class="bg-primary/5 dark:bg-white/5 py-16 px-4 md:px-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="w-full lg:w-1/2 relative">
+                    <div
+                        class="absolute -top-6 -left-6 bg-primary text-white px-6 py-3 rounded-lg font-bold shadow-lg z-10 rotate-[-5deg]">
+                        Chef's Selection
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-white/10">
+                        <img alt="Signature Roasted Sea Bass" class="w-full h-full object-cover"
+                            data-alt="Roasted whole sea bass with lemon and herbs"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0ivB7X3hA5sQyu5_v5FBXg7MMnfPCxLw5LEFap7rhQnf9H2ppA0S4hRj7RHQEEihUzN5r4UWYiW-WoUGg-RWInqga40KBHjZAw0mLuN5L1u_idi9cBoxguVg6fWEmdxkPQRNifnr_tbjyaAyfAd0gLNGOsySea4nMiSWinCXvCHEWn4AB_19hzH4DwGGObfYIKVcSndxToUU3svWG1G4tRbYX--NgGDc1QqYDS-57HJYZ42GrGBPawuf0Z9jf2bschl3Jz--vWuvG" />
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 space-y-6">
+                    <span class="text-primary font-black uppercase tracking-widest text-sm">Today's Special</span>
+                    <h2 class="text-4xl md:text-5xl font-black text-[#181311] dark:text-white leading-tight">Mediterranean
+                        Sea Bass with Charred Lemon</h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+                        Sourced daily from sustainable waters, our wild sea bass is pan-seared to perfection with a crisp
+                        skin, served over a bed of saffron-infused risotto and finished with a citrus reduction.
+                    </p>
+                    <div class="flex items-center gap-6 pt-4">
+                        <span class="text-3xl font-black text-primary">$42</span>
+                        <a href="reservations.html"
+                            class="px-8 py-4 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/30 hover:shadow-xl hover:-translate-y-1 transition-all">
+                            Order Special
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer class="bg-[#181311] text-white pt-20 pb-10 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div class="space-y-6">
+            <div class="flex items-center gap-2 text-primary">
+                <div class="size-8">
+                    <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+                <h2 class="text-xl font-bold text-white">FEASTRIA</h2>
+            </div>
+            <p class="text-white/70">Elevating the art of dining through passion, sustainability,
+                and unmatched culinary craft since 2012.</p>
+            <div class="flex gap-4">
+                <a class="size-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
+                    href="#">
+                    <span class="material-symbols-outlined text-lg">public</span>
+                </a>
+                <a class="size-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
+                    href="#">
+                    <span class="material-symbols-outlined text-lg">camera</span>
+                </a>
+                <a class="size-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
+                    href="#">
+                    <span class="material-symbols-outlined text-lg">share</span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <h4 class="font-bold mb-6 text-white">Quick Links</h4>
+            <ul class="space-y-4 text-white/70">
+                <li><a class="hover:text-primary transition-colors" href="menu.html">Our Menu</a></li>
+                <li><a class="hover:text-primary transition-colors" href="reservations.html">Make a
+                        Reservation</a></li>
+                <li><a class="hover:text-primary transition-colors" href="private-events.html">Private
+                        Events</a>
+                </li>
+                <li><a class="hover:text-primary transition-colors" href="gift-cards.html">Gift Cards</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold mb-6 text-white">Company</h4>
+            <ul class="space-y-4 text-white/70">
+                <li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+                <li><a class="hover:text-primary transition-colors" href="chefs.html">Our Chefs</a></li>
+                <li><a class="hover:text-primary transition-colors" href="blogs.html">Blog</a></li>
+                <li><a class="hover:text-primary transition-colors" href="careers.html">Careers</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold mb-6 text-white">Visit Us</h4>
+            <ul class="space-y-4 text-white/70">
+                <li class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-primary">location_on</span>
+                    <span>123 Culinary Ave, Gastronomy District<br />New York, NY 10001</span>
+                </li>
+                <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">phone</span>
+                    <span>(555) 123-4567</span>
+                </li>
+                <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary">mail</span>
+                    <span>hello@feastria.com</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-10 border-t border-white/10 pt-10 text-center text-sm text-white/40">
+        <p>© 2024 FEASTRIA Fine Dining Group. All rights reserved. | <a class="hover:underline" href="#">Privacy
+                Policy</a> | <a class="hover:underline" href="#">Terms of Service</a></p>
+    </div>
+</footer>
+
+</body>
+
+</html>
